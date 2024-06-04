@@ -18,6 +18,8 @@ namespace NLayer.Repository
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
+            // Bu kısımda da entity'lerimiz için seed data verebiliriz.
+
             base.OnModelCreating(modelBuilder);
         }
     }
