@@ -8,6 +8,7 @@ namespace NLayer.Core.DTOs
 
         [JsonIgnore]
         public int StatusCode { get; set; }
+
         public List<String>? Errors { get; set; }
 
         public static CustomResponseDto<T> Success(int statusCode, T data)
