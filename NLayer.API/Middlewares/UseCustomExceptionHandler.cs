@@ -9,7 +9,7 @@ namespace NLayer.API.Middlewares
     {
         public static void UseCustomException(this IApplicationBuilder app)
         {
-            app.UseExceptionHandler(config =>
+            app.UseExceptionHandler(config =>  
             {
                 config.Run(async context =>
                 {
