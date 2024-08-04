@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace NLayer.Repository.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -89,9 +89,9 @@ namespace NLayer.Repository.Migrations
                 columns: new[] { "Id", "CategoryId", "CreatedDate", "Name", "Price", "Stock", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2024, 6, 4, 17, 25, 50, 889, DateTimeKind.Local).AddTicks(4374), "Pilot kalem", 100m, 50, null },
-                    { 2, 1, new DateTime(2024, 6, 4, 17, 25, 50, 889, DateTimeKind.Local).AddTicks(4387), "Dolma kalem", 150m, 65, null },
-                    { 3, 1, new DateTime(2024, 6, 4, 17, 25, 50, 889, DateTimeKind.Local).AddTicks(4388), "Tükenmez kalem", 200m, 55, null },
+                    { 1, 1, new DateTime(2024, 8, 1, 23, 24, 4, 166, DateTimeKind.Local).AddTicks(3355), "Pilot kalem", 100m, 50, null },
+                    { 2, 1, new DateTime(2024, 8, 1, 23, 24, 4, 166, DateTimeKind.Local).AddTicks(3386), "Dolma kalem", 150m, 65, null },
+                    { 3, 1, new DateTime(2024, 8, 1, 23, 24, 4, 166, DateTimeKind.Local).AddTicks(3388), "Tükenmez kalem", 200m, 55, null },
                     { 4, 3, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Kareli defter", 120m, 8, null },
                     { 5, 3, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Çizgili defter", 140m, 25, null },
                     { 6, 3, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Düz defter", 260m, 35, null },
