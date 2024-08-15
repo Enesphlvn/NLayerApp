@@ -66,7 +66,7 @@ namespace NLayer.Web.Controllers
             return View(_mapper.Map<ProductDto>(product));
         }
 
-        [HttpPut]
+        [HttpPost]
         public async Task<IActionResult> Update(ProductDto productDto)
         {
             if (ModelState.IsValid)
