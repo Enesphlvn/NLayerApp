@@ -40,6 +40,7 @@ namespace NLayer.Repository
 
             return base.SaveChanges();
         }
+
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             foreach (var item in ChangeTracker.Entries())
@@ -66,6 +67,7 @@ namespace NLayer.Repository
 
             return base.SaveChangesAsync(cancellationToken);
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
