@@ -14,7 +14,7 @@ namespace NLayer.API.Controllers
         public CategoryWithDtoController(IServiceWithDto<Category, CategoryDto> service)
         {
             _categoryServiceWithDto = service;
-        }
+        } 
 
         [HttpGet]
         public async Task<IActionResult> Get()
